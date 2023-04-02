@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Efeito Scroll OnePage</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#sessao1">sessão 1</a></li>
+            <li><a href="#sessao2">sessão 2</a></li>
+            <li><a href="#sessao3">sessão 3</a></li>
+            <li><a href="#sessao4">sessão 4</a></li>
+        </ul>
+    </nav>
+    <div>
+        <section id="sessao1">
+                <div class="cronometro-container">
+                    <div class="time-container">
+                        <span data-time>00:00:00</span>
+                    </div>
+                        <div class="buttons-container">
+                            <button data-start="start">Continuar</button>
+                            <button data-pause disabled>Pausar</button>
+                            <button data-stop disabled>Parar</button>
+                        </div>
+                </div>
+        </section>
+    </div>
+    <div>
+        <section id="sessao2">
+            <h1>sessão2</h1>
+        </section>
+    </div>
+    <div>
+        <section id="sessao3">
+            <h1>sessão3</h1>
+        </section>
+    </div>
+    <div>
+        <section id="sessao4">
+            <h1>sessão4</h1>
+        </section>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+</html>
