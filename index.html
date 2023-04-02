@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#gggggg">
     <link rel="stylesheet" href="style.css">
     <title>DCP</title>
 </head>
@@ -28,6 +30,7 @@
                             <button data-stop disabled>Parar</button>
                         </div>
                 </div>
+                <script src="cronometro.js" defer></script>
         </section>
     </div>
     <div>
@@ -65,8 +68,6 @@
     </div>
     <div>
         <section id="sessao4">
-            <!DOCTYPE html>
-<html lang="en">
 
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
@@ -118,9 +119,17 @@
       </table>
   </main>  
 
-  <script src="script.js"></script>
+  <script src="sistemafinanceiro.js"></script>
         </section>
     </div>
-    <script src="app.js" defer></script>
+    <script type="module">
+
+      import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+      
+      const el = document.createElement('pwa-update');
+      
+      document.body.appendChild(el);
+      
+      </script>
 </body>
 </html>
