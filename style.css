@@ -118,18 +118,6 @@ div.relogio span{
     font-size: 128px;
 }
 /*------------------IMC------------------*/
-
-.container{
-    display: flex;
-    flex-direction: column;
-    background: rgb(224, 223, 218);
-    width: 400px;
-    height: 600px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgb(104, 96, 96);
-  }
   
   .title{
     display: flex;
@@ -143,7 +131,7 @@ div.relogio span{
   }
   
   .input {
-    display: flex;
+    display: inline; 
     width: 300px;
     height: 50px;
     justify-content: space-between;
@@ -155,7 +143,7 @@ div.relogio span{
     border-radius: 5px;
     border:none;
     outline: 0;
-    font: bold 1.5rem serif;
+    font: 1rem serif;
     text-align: center;
   }
   
@@ -164,7 +152,7 @@ div.relogio span{
   }
   
   #calcular{
-    width: 300px;
+    width: 200px;
     height: 40px;
     font: bold 1.2rem serif;
     background: #000;
@@ -178,7 +166,7 @@ div.relogio span{
     display: flex;
     margin-top: 20px;
     align-items: center;
-    width: 300px;
+    width: 1020px;
     height: 150px;
     border-radius: 5px;
     font: italic 1.5rem serif;
