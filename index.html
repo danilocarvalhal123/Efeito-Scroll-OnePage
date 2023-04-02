@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Efeito Scroll OnePage</title>
+    <title>DCP</title>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="#sessao1">sessão 1</a></li>
-            <li><a href="#sessao2">sessão 2</a></li>
-            <li><a href="#sessao3">sessão 3</a></li>
-            <li><a href="#sessao4">sessão 4</a></li>
+            <li><a href="#sessao1">Cronômetro</a></li>
+            <li><a href="#sessao2">Relógio</a></li>
+            <li><a href="#sessao3">IMC</a></li>
+            <li><a href="#sessao4">Sistema Financeiro</a></li>
         </ul>
     </nav>
     <div>
@@ -23,7 +23,7 @@
                         <span data-time>00:00:00</span>
                     </div>
                         <div class="buttons-container">
-                            <button data-start="start">Continuar</button>
+                            <button data-start="start">Iniciar</button>
                             <button data-pause disabled>Pausar</button>
                             <button data-stop disabled>Parar</button>
                         </div>
@@ -32,17 +32,93 @@
     </div>
     <div>
         <section id="sessao2">
-            <h1>sessão2</h1>
+            <div class="relogio">
+                <span>00:00:00</span>
+            </div>
+        
+            <script src="relogio.js"></script>
         </section>
     </div>
     <div>
         <section id="sessao3">
-            <h1>sessão3</h1>
+            <div class="container">
+                <div class="title"> Calculadora - IMC </div>
+                <div class="input">
+                    <label>Nome:</label>
+                    <input type="text" id='nome'>
+                </div>
+                <div class="input">
+                    <label>Altura:</label>
+                    <input type="number" id='altura'>
+                </div>
+                <div class="input">
+                    <label>Peso:</label>
+                    <input type="number" id='peso'>
+                </div>
+                <button id='calcular'>Calcular</button>
+        
+                <div class="result" id='resultado'></div>
+              </div>
+            </main>
+            <script src="imc.js"></script>
         </section>
     </div>
     <div>
         <section id="sessao4">
-            <h1>sessão4</h1>
+            <!DOCTYPE html>
+<html lang="en">
+
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <main id="test">
+    <div class="resume">
+      <div>
+        Entradas: R$
+        <span class="incomes">0.00</span>
+      </div>
+      <div>
+        Saídas: R$
+        <span class="expenses">0.00</span>
+      </div>
+      <div>
+        Total: R$
+        <span class="total">0.00</span>
+      </div>
+    </div>
+    <div class="newItem">
+      <div class="divDesc">
+        <label for="desc">Descrição</label>
+        <input type="text" id="desc" />
+      </div>
+      <div class="divAmount">
+        <label for="amount">Valor</label>
+        <input type="number" id="amount" />
+      </div>
+      <div class="divType">
+        <label for="type">Tipo</label>
+        <select id="type">
+          <option>Entrada</option>
+          <option>Saída</option>
+        </select>
+      </div>
+      <button id="btnNew">Incluir</button>
+    </div>
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th class="columnAmount">Valor</th>
+            <th class="columnType">Tipo</th>
+            <th class="columnAction"></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+  </main>  
+
+  <script src="script.js"></script>
         </section>
     </div>
     <script src="app.js" defer></script>
